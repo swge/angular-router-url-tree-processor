@@ -1,0 +1,7 @@
+<div class="url-segment-group-viewer__container">
+    <div class="segment-name">{{segmentGroupName}}</div>
+    <ul>
+        <li *ngFor="let segment of urlSegmentGroup.segments">{{segment.path}}</li>
+    </ul>
+    <app-url-segment-group-viewer *ngFor="let segmentGroupItem of urlSegmentGroup.children | keyvalue" [segmentGroupName]="segmentGroupItem.key" [urlSegmentGroup]="segmentGroupItem.value"></app-url-segment-group-viewer>
+</div>

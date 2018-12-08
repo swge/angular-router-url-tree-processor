@@ -1,0 +1,13 @@
+.app__container {
+    box-sizing: border-box;
+
+    .url-tree__container {
+        float: left;
+        width: 50%;
+        border-right: solid 3px black;
+    }
+    .router-viewer__container {
+        margin-left: 50%;
+        width: 50%;
+    }
+}

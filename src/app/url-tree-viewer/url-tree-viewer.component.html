@@ -1,0 +1,7 @@
+<div class="url-tree-viewer__container">
+    <div class="url__text-field">
+        <input type="text" [(ngModel)]="url">
+        <button (click)="onClickParse()">PARSE</button>
+    </div>
+    <app-url-segment-group-viewer *ngIf="tree" [segmentGroupName]="'ROOT'" [urlSegmentGroup]="tree.root"></app-url-segment-group-viewer>
+</div>
